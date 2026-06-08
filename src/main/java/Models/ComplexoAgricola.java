@@ -2,6 +2,9 @@ package Models;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
+
 @Entity
 @Table(name = "complexos")
 public class ComplexoAgricola {
@@ -15,6 +18,14 @@ public class ComplexoAgricola {
 
     @Column(nullable = false)
     private double area;
+
+    private String utilizacao;
+
+    @OneToMany(mappedBy = "complexoAgricola", cascade = CascadeType.ALL)
+    private List<Contorno> contornos;
+
+    @OneToMany(mappedBy = "complexoAgricola", cascade = CascadeType.ALL)
+    private List<FaixaSolo> faixasSolo;
 
 
 }
