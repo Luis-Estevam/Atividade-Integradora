@@ -28,4 +28,29 @@ public class ComplexoAgricola {
     private List<FaixaSolo> faixasSolo;
 
 
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public String getUtilizacao() {
+        return utilizacao;
+    }
+
+    public void setUtilizacao(String utilizacao) {
+        this.utilizacao = utilizacao;
+    }
+
 }

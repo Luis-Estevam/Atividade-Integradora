@@ -15,5 +15,27 @@ public class FaixaSolo {
     @JoinColumn(name = "complexo_agricola_id")
     private ComplexoAgricola complexoAgricola;
 
-    // Construtores, Getters e Setters
+    public double getProfundidade() {
+        return profundidade;
+    }
+
+    public void setProfundidade(double profundidade) {
+        this.profundidade = profundidade;
+    }
+
+    public String getLocalizacao() {
+        return localizacao;
+    }
+
+    public void setLocalizacao(String localizacao) {
+        this.localizacao = localizacao;
+    }
+
+    public ComplexoAgricola getComplexoAgricola() {
+        return complexoAgricola;
+    }
+
+    public void setComplexoAgricola(ComplexoAgricola complexoAgricola) {
+        this.complexoAgricola = complexoAgricola;
+    }
 }
