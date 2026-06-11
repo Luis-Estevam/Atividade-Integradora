@@ -19,6 +19,16 @@ public class Contorno {
     @JoinColumn(name = "complexo_agricola_id")
     private ComplexoAgricola complexoAgricola;
 
+    public Contorno() {
+    }
+
+    public Contorno(String coordenadas, double area, ClasseSolo classeSolo, ComplexoAgricola complexoAgricola) {
+        this.coordenadas = coordenadas;
+        this.area = area;
+        this.classeSolo = classeSolo;
+        this.complexoAgricola = complexoAgricola;
+    }
+
     public String getCoordenadas() {
         return coordenadas;
     }

@@ -16,6 +16,15 @@ public class ClasseSolo {
     @JoinColumn(name = "tipo_solo_id")
     private TipoSolo tipoSolo;
 
+    public ClasseSolo() {
+    }
+
+    public ClasseSolo(String nome, String propriedadesFisicas, TipoSolo tipoSolo) {
+        this.nome = nome;
+        this.propriedadesFisicas = propriedadesFisicas;
+        this.tipoSolo = tipoSolo;
+    }
+
     public String getNome() {
         return nome;
     }

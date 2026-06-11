@@ -15,6 +15,15 @@ public class FaixaSolo {
     @JoinColumn(name = "complexo_agricola_id")
     private ComplexoAgricola complexoAgricola;
 
+    public FaixaSolo() {
+    }
+
+    public FaixaSolo(double profundidade, String localizacao, ComplexoAgricola complexoAgricola) {
+        this.profundidade = profundidade;
+        this.localizacao = localizacao;
+        this.complexoAgricola = complexoAgricola;
+    }
+
     public double getProfundidade() {
         return profundidade;
     }

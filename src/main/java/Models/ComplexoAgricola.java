@@ -2,6 +2,7 @@ package Models;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -27,8 +28,17 @@ public class ComplexoAgricola {
     @OneToMany(mappedBy = "complexoAgricola", cascade = CascadeType.ALL)
     private List<FaixaSolo> faixasSolo;
 
+    public ComplexoAgricola() {
+        this.contornos = new ArrayList<>();
+        this.faixasSolo = new ArrayList<>();
+    }
 
-
+    public ComplexoAgricola(String nome, double area, String utilizacao) {
+        this();
+        this.nome = nome;
+        this.area = area;
+        this.utilizacao = utilizacao;
+    }
     public String getNome() {
         return nome;
     }

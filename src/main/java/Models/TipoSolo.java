@@ -12,6 +12,14 @@ public class TipoSolo {
     private String descricao;
     private String origemGeologica;
 
+    public TipoSolo() {
+    }
+
+    public TipoSolo(String descricao, String origemGeologica) {
+        this.descricao = descricao;
+        this.origemGeologica = origemGeologica;
+    }
+
     public String getDescricao() {
         return descricao;
     }
