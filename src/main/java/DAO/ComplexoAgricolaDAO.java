@@ -23,7 +23,7 @@ public class ComplexoAgricolaDAO {
         em.getTransaction().commit();
     }
 
-    public void deletar(Integer id) {
+    public void deletar(int id) {
         ComplexoAgricola c = buscarPorId(id);
         if (c != null) {
             em.getTransaction().begin();
@@ -32,7 +32,7 @@ public class ComplexoAgricolaDAO {
         }
     }
 
-    public ComplexoAgricola buscarPorId(Integer id) {
+    public ComplexoAgricola buscarPorId(int id) {
         return em.find(ComplexoAgricola.class, id);
     }
 
