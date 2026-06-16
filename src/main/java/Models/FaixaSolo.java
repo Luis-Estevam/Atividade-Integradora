@@ -24,6 +24,10 @@ public class FaixaSolo {
         this.complexoAgricola = complexoAgricola;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
     public double getProfundidade() {
         return profundidade;
     }

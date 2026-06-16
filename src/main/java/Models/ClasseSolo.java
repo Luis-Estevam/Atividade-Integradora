@@ -25,6 +25,10 @@ public class ClasseSolo {
         this.tipoSolo = tipoSolo;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
     public String getNome() {
         return nome;
     }

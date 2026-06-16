@@ -33,6 +33,10 @@ public class Contorno {
         return coordenadas;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
     public void setCoordenadas(String coordenadas) {
         this.coordenadas = coordenadas;
     }

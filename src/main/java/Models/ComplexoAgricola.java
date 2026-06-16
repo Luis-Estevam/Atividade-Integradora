@@ -12,7 +12,7 @@ public class ComplexoAgricola {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @Column(nullable = false)
     private String nome;
@@ -41,6 +41,10 @@ public class ComplexoAgricola {
     }
     public String getNome() {
         return nome;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setNome(String nome) {
